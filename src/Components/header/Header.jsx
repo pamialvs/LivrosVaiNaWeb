@@ -1,10 +1,10 @@
-import logoLivro from "../../Assets/logoLivro.png"
-import lupa from "../../Assets/lupa.png"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Inicio from "../../Pages/inicio/Inicio"
-import LivrosDoados from "../../Pages/livrosDoados/LivrosDoados"
-import QueroDoar from "../../Pages/queroDoar/QueroDoar"
-import S from "./header.module.scss"
+import logoLivro from "../../Assets/logoLivro.png";
+import lupa from "../../Assets/lupa.png";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Inicio from "../../Pages/inicio/Inicio";
+import LivrosDoados from "../../Pages/livrosDoados/LivrosDoados";
+import QueroDoar from "../../Pages/queroDoar/QueroDoar";
+import S from "./header.module.scss";
 
 export default function header() {
   return (
@@ -20,7 +20,7 @@ export default function header() {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/doados">Livros Doados</Link>
+              <Link to="/livrosdoados">Livros Doados</Link>
             </li>
             <li>
               <Link to="/queroDoar">Quero Doar</Link>
