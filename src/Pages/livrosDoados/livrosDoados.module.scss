@@ -1,43 +1,65 @@
-.livrosDoadosSection{
+.livrosDoadosSection {
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-    h2{
-        font-size: 32px;
+  
+    h2 {
+      font-size: 32px;
     }
-}
-
-.containerCards{
+  }
+  
+  .containerCards {
     width: 95%;
     height: 60vh;
-    
-    section{
-        border: solid 3px #005695;
-        width: 12%;
-        height: 35vh;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-
-        div{
-            text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  
+    section {
+      border: solid 3px #005695;
+      width: 12%;
+      min-width: 150px;
+      height: 35vh;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 10px;
+  
+      img {
+        width: 80%;
+        max-height: 120px;
+        object-fit: contain;
+      }
+  
+      div {
+        text-align: center;
+  
+        h3 {
+          font-size: 16px;
+          margin: 5px 0;
         }
-    }
-}
-
-@media (max-width: 800px){
-    .containerCards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        section{
-            width: 60%;
+  
+        p {
+          font-size: 14px;
+          margin: 2px 0;
         }
+      }
     }
-}
+  }
+  
+  @media (max-width: 800px) {
+    .containerCards {
+      flex-direction: column;
+  
+      section {
+        width: 60%;
+      }
+    }
+  }
+  
